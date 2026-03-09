@@ -1,6 +1,6 @@
 # BAPS: Budget-constrained Algebraic Parsimony Search
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pchuang99tw/BAPS-Causal-Diagnosis/blob/main/BAPS_Official.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pchuang99tw/BAPS-Diagnosis/blob/main/BAPS_Official.ipynb)
 
 Official implementation of the **BAPS** algorithm, a quantum-inspired optimization framework designed for robust industrial causal diagnosis under structural complexity constraints.
 
