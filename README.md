@@ -1,4 +1,4 @@
-# BAPS: Budget-constrained Algebraic Parsimony Search
+# BAPS: Budgeted Acycliclity with Phase-transical Spectral diagnostics
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pchuang99tw/BAPS-Diagnosis/blob/main/BAPS.ipynb)
 
@@ -6,7 +6,7 @@ Official implementation of the **BAPS** algorithm, a quantum-inspired optimizati
 
 ## 📖 Overview
 This repository contains the source code for the paper:  
-**"Budget-constrained Algebraic Parsimony Search for Robust Industrial Causal Diagnosis"** (Submitted to *Scientific Reports*).
+**"Structural-Budgeted QUBO Learning of Bayesian Networks with Spectral and Credibility Diagnostics"** (Submitted to *Scientific Reports*).
 
 BAPS addresses the challenge of discovering reliable causal structures in complex industrial environments (e.g., semiconductor manufacturing) by formulating the problem as a Quadratic Unconstrained Binary Optimization (QUBO) task. It balances model explanatory power (Log-likelihood) with structural parsimony through an algebraic connectivity-based pruning mechanism.
 
@@ -29,11 +29,41 @@ You can run the full experimental pipeline directly in Google Colab by clicking 
 run_baps_robustness_analysis()
 ```
 
+## ⚙️ Experimental Setup
+
+The experiments evaluate the effect of structural budgets on causal discovery stability.
+
+- Structural budget range: **B ∈ {1,…,8}**
+- Optimization trials per configuration: **30 independent runs**
+- Evaluation split: **80/20 randomized train-test split**
+- Candidate edge set: **65 edges derived from industrial UPS event logs**
+
+Evaluation metrics include:
+
+- **Test Log-Likelihood (LL/sample)** – predictive performance on unseen data  
+- **Edge Count** – structural complexity of the learned BN  
+- **Explanatory Efficiency** = |LL| / number of edges  
+
+All baseline algorithms (HC+BIC, HC+BDeu, PC, NOTEARS) are evaluated under the **same candidate edge set and identical train-test splits** to ensure fair comparison.
+
 ## 📊 Experimental Results
 This implementation reproduces the core diagnostic plots of the study:
 - **Spectral Analysis**: Evolution of Spectral Radius and Algebraic Connectivity.
 - **Optimization Stability**: Convergence of QUBO energy across 30 independent trials.
 - **Causal Coverage**: Growth of causal coverage relative to the structural budget.
+## 🔬 Reproducing Paper Results
+
+To reproduce the results reported in the paper:
+
+1. Load the SECOM or UPS dataset.
+2. Scan structural budgets **B ∈ {1,...,8}**.
+3. Execute **30 optimization trials** per budget value.
+4. Compute evaluation metrics on an **80/20 train-test split**.
+
+Example:
+
+```python
+run_baps_robustness_analysis()
 
 ## 🎓 Citation
 If you find this code useful in your research, please cite.
