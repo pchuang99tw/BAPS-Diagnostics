@@ -31,12 +31,12 @@ run_baps_robustness_analysis()
 
 ## ⚙️ Experimental Setup
 
-The experiments evaluate the effect of structural budgets on causal discovery stability.
+The experiments evaluate the effect of structural budgets on causal discovery stability using the **SECOM semiconductor manufacturing dataset** from the UCI Machine Learning Repository.
 
 - Structural budget range: **B ∈ {1,…,8}**
 - Optimization trials per configuration: **30 independent runs**
 - Evaluation split: **80/20 randomized train-test split**
-- Candidate edge set: **65 edges derived from industrial UPS event logs**
+- Candidate edge set: derived from feature-filtered SECOM sensor variables
 
 Evaluation metrics include:
 
@@ -53,12 +53,19 @@ This implementation reproduces the core diagnostic plots of the study:
 - **Causal Coverage**: Growth of causal coverage relative to the structural budget.
 ## 🔬 Reproducing Paper Results
 
+## 🔬 Reproducing Paper Results
+
 To reproduce the results reported in the paper:
 
-1. Load the SECOM or UPS dataset.
+1. Load the **SECOM semiconductor manufacturing dataset**.
 2. Scan structural budgets **B ∈ {1,...,8}**.
 3. Execute **30 optimization trials** per budget value.
-4. Compute evaluation metrics on an **80/20 train-test split**.
+4. Compute evaluation metrics on an **80/20 randomized train-test split**.
+
+Example:
+
+```python
+run_baps_robustness_analysis()
 
 Example:
 
