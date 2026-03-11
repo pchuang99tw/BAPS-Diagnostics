@@ -56,7 +56,7 @@ This implementation reproduces the core diagnostic plots of the study:
 
 To reproduce the results reported in the paper:
 
-1. Load the **SECOM semiconductor manufacturing dataset**.
+1. Load the **SECOM semiconductor manufacturing dataset**. (The SECOM dataset is publicly available from the UCI Machine Learning Repository.)
 2. Scan structural budgets **B ∈ {1,...,8}**.
 3. Execute **30 optimization trials** per budget value.
 4. Compute evaluation metrics on an **80/20 randomized train-test split**.
