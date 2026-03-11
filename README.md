@@ -1,6 +1,6 @@
 # BAPS: Budgeted Acyclicity with Phase-transition Spectral diagnostics
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pchuang99tw/BAPS-Diagnosis/blob/main/BAPS.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pchuang99tw/BAPS-Diagnostics/blob/main/BAPS.ipynb)
 
 Official implementation of the **BAPS** algorithm, a quantum-inspired optimization framework for learning reliable causal structures in industrial systems under structural complexity constraints.
 
