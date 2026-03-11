@@ -1,8 +1,8 @@
-# BAPS: Budgeted Acycliclity with Phase-transical Spectral diagnostics
+# BAPS: Budgeted Acyclicity with Phase-transition Spectral diagnostics
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pchuang99tw/BAPS-Diagnosis/blob/main/BAPS.ipynb)
 
-Official implementation of the **BAPS** algorithm, a quantum-inspired optimization framework designed for robust industrial causal diagnosis under structural complexity constraints.
+Official implementation of the **BAPS** algorithm, a quantum-inspired optimization framework for learning reliable causal structures in industrial systems under structural complexity constraints.
 
 ## 📖 Overview
 This repository contains the source code for the paper:  
@@ -64,7 +64,7 @@ Example:
 
 ```python
 run_baps_robustness_analysis()
-
+```
 ## 🎓 Citation
 If you find this code useful in your research, please cite.
 
