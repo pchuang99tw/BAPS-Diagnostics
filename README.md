@@ -51,7 +51,6 @@ This implementation reproduces the core diagnostic plots of the study:
 - **Spectral Analysis**: Evolution of Spectral Radius and Algebraic Connectivity.
 - **Optimization Stability**: Convergence of QUBO energy across 30 independent trials.
 - **Causal Coverage**: Growth of causal coverage relative to the structural budget.
-## 🔬 Reproducing Paper Results
 
 ## 🔬 Reproducing Paper Results
 
